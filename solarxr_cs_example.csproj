@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <FlatSharpSchema Include="protocol\schema\all.fbs"> 
+      <IncludePath>protocol\schema</IncludePath>
+    </FlatSharpSchema>
+
+    <!-- <FlatSharpSchema Include="Example00-Basics\Basics.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example01-DeserializationModes\DeserializationModes.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example02-Vectors\Vectors.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example03-IOOptions\IOOptionsExample.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example04-gRPC\GrpcExample.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example05-CopyConstructors\CopyConstructorsExample.fbs" /> -->
+    <!-- </FlatSharpSchema> -->
+    <!-- <FlatSharpSchema Include="Example07-SortedVectors\SortedVectors.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example08-IndexedVectors\IndexedVectors.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example09-Unions\Unions.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example10-SharedStrings\SharedStrings.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example11-StructVectors\StructVectors.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example12-WriteThrough\WriteThrough.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example13-ValueStructs\ValueStructs.fbs" /> -->
+    <!-- <FlatSharpSchema Include="Example14-UnsafeOptions\UnsafeOptions.fbs" /> -->
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FlatSharp.Compiler" Version="7.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="FlatSharp.Runtime" Version="7.0.1" />
+    <!-- <PackageReference Include="Grpc" Version="2.38.1" /> -->
+  </ItemGroup>
+</Project>

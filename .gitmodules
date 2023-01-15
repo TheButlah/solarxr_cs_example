@@ -1,0 +1,3 @@
+[submodule "SolarXR-Protocol"]
+	path = protocol
+	url = https://github.com/SlimeVR/SolarXR-Protocol
